@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <!-- Calculator Container -->
+    <div class="calculator bg-dark rounded shadow p-3">
+        <!-- History Section -->
+        <div class="history-section mb-2">
+            <div class="history-heading text-white">History</div>
+            <div id="history" class="history-display text-white text-end fs-6"></div>
+        </div>
+
+        <!-- Display Screen -->
+        <div class="display mb-3">
+            <input type="text" id="display" class="form-control text-end fs-3 bg-dark text-white" disabled>
+        </div>
+
+        <!-- Buttons Grid -->
+        <div class="buttons row g-2">
+            <!-- Memory Buttons -->
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="MC">MC</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="MR">MR</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="M+">M+</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="M-">M-</button></div>
+
+            <!-- Function Buttons -->
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="CE">CE</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="C">C</button></div>
+            <div class="col-3"><button class="function btn btn-danger w-100" data-value="←">←</button></div>
+            <div class="col-3"><button class="operator btn btn-warning w-100" data-value="/">/</button></div>
+
+            <!-- Additional Functions -->
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="√">√</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="x²">x²</button></div>
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="1/x">1/x</button></div>
+            <div class="col-3"><button class="operator btn btn-warning w-100" data-value="%">%</button></div>
+
+            <!-- Number and Operator Buttons -->
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="7">7</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="8">8</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="9">9</button></div>
+            <div class="col-3"><button class="operator btn btn-warning w-100" data-value="*">*</button></div>
+
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="4">4</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="5">5</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="6">6</button></div>
+            <div class="col-3"><button class="operator btn btn-warning w-100" data-value="-">-</button></div>
+
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="1">1</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="2">2</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="3">3</button></div>
+            <div class="col-3"><button class="operator btn btn-warning w-100" data-value="+">+</button></div>
+
+            <!-- Advanced Buttons -->
+            <div class="col-3"><button class="function btn btn-secondary w-100" data-value="±">±</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value="0">0</button></div>
+            <div class="col-3"><button class="btn btn-dark w-100" data-value=".">.</button></div>
+            <div class="col-3"><button class="equals btn btn-warning w-100" data-value="=">=</button></div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
